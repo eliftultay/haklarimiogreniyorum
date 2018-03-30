@@ -1,24 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14101" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xwU-UZ-9Xg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="0c9-n5-2Zo">
+            <objects>
+                <navigationController id="xwU-UZ-9Xg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pd3-WM-b2j">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PIX-pX-vej"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dS4-mR-emw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1511" y="-146"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="haklarimio_greniyorum" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bo5-Xo-L1l">
+                                <rect key="frame" x="-200" y="64" width="200" height="603"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TUJ-OA-TAI">
+                                        <rect key="frame" x="8" y="28" width="184" height="78"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="AİLE VE SOSYAL POLİTİKALAR BAKANLIĞI, ALO 183 SOSYAL DESTEK HATTI">
+                                            <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="jQz-gS-cd9" kind="show" id="2fb-Ar-aJZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="mdu-eQ-IBs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bo5-Xo-L1l" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="I0c-XI-aJn"/>
+                            <constraint firstItem="Bo5-Xo-L1l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LZW-9M-ZVz"/>
+                            <constraint firstItem="Bo5-Xo-L1l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-200" id="Mbn-CT-8zm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="lFb-W7-JNo">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="dOs-so-ffY">
+                            <color key="tintColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="menuPressButton:" destination="BYZ-38-t0r" id="eRN-Iq-Gyz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="sideMenuConstraint" destination="Mbn-CT-8zm" id="OEt-Zr-0CT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-742" y="-146"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="G5A-ZZ-chm">
+            <objects>
+                <viewController id="jQz-gS-cd9" customClass="ViewController2" customModule="haklarimio_greniyorum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qR6-Kg-AR2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k1o-L7-qSg">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3J-dG-zSG">
+                                        <rect key="frame" x="8" y="8" width="359" height="559"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="359" id="Gbk-Sv-Bcy"/>
+                                        </constraints>
+                                        <string key="text">AİLE VE SOSYAL POLİTİKALAR BAKANLIĞI, ALO 183 SOSYAL DESTEK HATTI                                                 
+Evlât edinme, koruyucu âile, çocuk hakları, çocukların âile yanında desteklenmesi, suça yönelen veya suçun mağduru olan çocukların rehabilitasyonu, sokakta yaşayan/çalıştırılan çocuklara yönelik hizmetler, çocukların korunma altına alınması, çocuk yuvâsına, yetiştirme yurduna, sevgi evlerine, çocuk evlerine yerleştirilmesi, kuruluşlardan ayrılan çocukların işe yerleştirilmesi ve toplum içinde izlenmesi, çocuklara yönelik gönüllü hizmetlerine ilişkin gelen talep, tâvsiye ve şikâyetler değerlendirilerek rehberlik yapılmakta, gerek görülmesi halinde Çocuk Hizmetleri Genel Müdürlüğü veya ilgili ilin Aile ve Sosyal Politikalar İl Müdürlüğünde görevli Acil Müdahale Ekip Sorumlusuna aktarılarak müdâhale edilmesi sağlanmaktadır.
+</string>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="E3J-dG-zSG" secondAttribute="trailing" constant="8" id="0yP-8R-PZN"/>
+                                    <constraint firstItem="E3J-dG-zSG" firstAttribute="height" secondItem="k1o-L7-qSg" secondAttribute="height" id="4Kc-fr-qaq"/>
+                                    <constraint firstAttribute="bottom" secondItem="E3J-dG-zSG" secondAttribute="bottom" constant="574" id="bO0-FN-JDX"/>
+                                    <constraint firstItem="E3J-dG-zSG" firstAttribute="leading" secondItem="k1o-L7-qSg" secondAttribute="leading" constant="8" id="iF5-s8-NHx"/>
+                                    <constraint firstItem="E3J-dG-zSG" firstAttribute="top" secondItem="k1o-L7-qSg" secondAttribute="top" constant="8" id="wQO-iH-cWm"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k1o-L7-qSg" firstAttribute="top" secondItem="fYn-NQ-7GR" secondAttribute="top" id="029-wC-VF5"/>
+                            <constraint firstItem="k1o-L7-qSg" firstAttribute="bottom" secondItem="fYn-NQ-7GR" secondAttribute="bottom" id="K3u-p6-VyW"/>
+                            <constraint firstItem="k1o-L7-qSg" firstAttribute="leading" secondItem="fYn-NQ-7GR" secondAttribute="leading" id="Vd0-xP-MWu"/>
+                            <constraint firstItem="fYn-NQ-7GR" firstAttribute="trailing" secondItem="k1o-L7-qSg" secondAttribute="trailing" id="eoA-l4-Tz3"/>
+                            <constraint firstItem="k1o-L7-qSg" firstAttribute="width" secondItem="qR6-Kg-AR2" secondAttribute="width" id="tDv-p8-4TF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fYn-NQ-7GR"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="label" destination="E3J-dG-zSG" id="pAF-oO-h9y"/>
+                        <outlet property="scrollView" destination="k1o-L7-qSg" id="IHL-PQ-nEp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="56a-75-xs0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34" y="-146"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
