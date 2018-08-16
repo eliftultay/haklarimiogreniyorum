@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xwU-UZ-9Xg">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="0c9-n5-2Zo">
+            <objects>
+                <navigationController id="xwU-UZ-9Xg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pd3-WM-b2j">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PIX-pX-vej"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dS4-mR-emw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1511" y="-146"/>
+        </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="cmu-cL-5NX">
+            <objects>
+                <viewController id="lpm-3T-U2p" customClass="QuizViewController" customModule="haklarimiogreniyorum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hy6-sS-Muq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Svc-z5-Eyb">
+                                <rect key="frame" x="238" y="348" width="160" height="140"/>
+                                <color key="backgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="dYe-5q-ssl"/>
+                                    <constraint firstAttribute="height" constant="140" id="fWN-XO-zWT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="B">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button1:" destination="lpm-3T-U2p" eventType="touchUpInside" id="Fgn-hC-a4x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zNg-Bf-j7n">
+                                <rect key="frame" x="16" y="349" width="160" height="140"/>
+                                <color key="backgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="H9s-Vr-UcI"/>
+                                    <constraint firstAttribute="height" constant="140" id="X7a-0z-1AH"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="140" id="hyF-bl-vXI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <state key="normal" title="A">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button:" destination="lpm-3T-U2p" eventType="touchUpInside" id="ae7-eF-sae"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Olh-zT-hPC">
+                                <rect key="frame" x="16" y="496" width="160" height="140"/>
+                                <color key="backgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="4iZ-JM-1fA"/>
+                                    <constraint firstAttribute="height" constant="140" id="R72-uD-PG4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button2:" destination="lpm-3T-U2p" eventType="touchUpInside" id="UMk-Dl-dqL"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="M8a-S0-ARP">
+                                <rect key="frame" x="238" y="496" width="160" height="140"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2r-zx-Sv7">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="140"/>
+                                        <color key="backgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="bhA-Nk-3hT"/>
+                                            <constraint firstAttribute="height" constant="140" id="oVe-tb-76S"/>
+                                            <constraint firstAttribute="width" secondItem="p2r-zx-Sv7" secondAttribute="height" multiplier="8:7" id="wRt-XD-8DT"/>
+                                        </constraints>
+                                        <state key="normal" title="D">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Button3:" destination="lpm-3T-U2p" eventType="touchUpInside" id="YBf-yj-pb8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="M8a-S0-ARP" firstAttribute="top" secondItem="Olh-zT-hPC" secondAttribute="top" id="5dO-2V-vNF"/>
+                            <constraint firstItem="zNg-Bf-j7n" firstAttribute="top" secondItem="Svc-z5-Eyb" secondAttribute="top" constant="1" id="BxI-Kc-TNC"/>
+                            <constraint firstItem="zNg-Bf-j7n" firstAttribute="leading" secondItem="M1V-Hr-qQo" secondAttribute="leading" constant="16" id="d9D-tF-yCY"/>
+                            <constraint firstItem="Olh-zT-hPC" firstAttribute="top" secondItem="zNg-Bf-j7n" secondAttribute="bottom" constant="7" id="mic-xy-my6"/>
+                            <constraint firstItem="M1V-Hr-qQo" firstAttribute="trailing" secondItem="M8a-S0-ARP" secondAttribute="trailing" constant="16" id="nXy-lA-pPc"/>
+                            <constraint firstItem="Olh-zT-hPC" firstAttribute="leading" secondItem="M1V-Hr-qQo" secondAttribute="leading" constant="16" id="pP1-32-GvQ"/>
+                            <constraint firstItem="M1V-Hr-qQo" firstAttribute="trailing" secondItem="Svc-z5-Eyb" secondAttribute="trailing" constant="16" id="zDp-x9-4OA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M1V-Hr-qQo"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="Buttons" destination="zNg-Bf-j7n" collectionClass="NSMutableArray" id="YcV-Zw-l4R"/>
+                        <outletCollection property="Buttons" destination="Svc-z5-Eyb" collectionClass="NSMutableArray" id="1ag-AN-Yfg"/>
+                        <outletCollection property="Buttons" destination="Olh-zT-hPC" collectionClass="NSMutableArray" id="Eg0-Ap-QLe"/>
+                        <outletCollection property="Buttons" destination="p2r-zx-Sv7" collectionClass="NSMutableArray" id="Xdz-DX-mpr"/>
+                        <segue destination="aQJ-3F-ypf" kind="show" identifier="go" id="shf-4Z-VbX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zzd-6K-TUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1446" y="618"/>
+        </scene>
+        <!--Quiz Result View Controller-->
+        <scene sceneID="IPH-Nl-764">
+            <objects>
+                <viewController id="aQJ-3F-ypf" customClass="QuizResultViewController" customModule="haklarimiogreniyorum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JBH-Cs-ZsU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tebrikler                             Testi Tamamladınız!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iNa-yL-weU">
+                                <rect key="frame" x="43" y="134.66666666666663" width="328" height="403"/>
+                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="403" id="8BE-1B-Ku8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smile" highlightedImage="smile" translatesAutoresizingMaskIntoConstraints="NO" id="PH9-nZ-i0T">
+                                <rect key="frame" x="148" y="389" width="78" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="I5w-2f-SZ4"/>
+                                    <constraint firstAttribute="height" constant="78" id="rjs-8p-atu"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iNa-yL-weU" firstAttribute="centerY" secondItem="V8g-Hh-ogH" secondAttribute="centerY" constant="-42" id="01T-Ll-cRk"/>
+                            <constraint firstItem="iNa-yL-weU" firstAttribute="centerX" secondItem="V8g-Hh-ogH" secondAttribute="centerX" id="Cc6-fO-PAj"/>
+                            <constraint firstItem="PH9-nZ-i0T" firstAttribute="leading" secondItem="V8g-Hh-ogH" secondAttribute="leading" constant="148" id="DUx-RZ-qzc"/>
+                            <constraint firstItem="PH9-nZ-i0T" firstAttribute="top" secondItem="V8g-Hh-ogH" secondAttribute="top" constant="369" id="Kip-5p-A7n"/>
+                            <constraint firstItem="iNa-yL-weU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="V8g-Hh-ogH" secondAttribute="leading" id="Mzf-xW-Okl"/>
+                            <constraint firstItem="V8g-Hh-ogH" firstAttribute="trailing" secondItem="iNa-yL-weU" secondAttribute="trailing" constant="43" id="Y6B-qy-chX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V8g-Hh-ogH"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="turn" id="Fw6-vv-lZ3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qHm-Zf-wLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-743.20000000000005" y="606.74662668665667"/>
+        </scene>
+        <!--Agreement View Controller-->
+        <scene sceneID="hC0-cr-AHz">
+            <objects>
+                <viewController id="3Cp-jb-j52" customClass="AgreementViewController" customModule="haklarimiogreniyorum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dpX-DP-Xni">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birleşmiş Millletler Çocuk Hakları Sözleşmesi " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kR9-Lz-PyO">
+                                <rect key="frame" x="16" y="48" width="382" height="54"/>
+                                <color key="backgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="vrx-6W-fsb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birleşmiş Milletler Genel Kurulu tarafından 20 Kasım 1989 tarihinde kabul edilmiştir.  " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CYR-f8-gGW">
+                                <rect key="frame" x="16" y="121" width="382" height="36"/>
+                                <color key="backgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="VSi-8E-d46"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bWW-z1-NmN">
+                                <rect key="frame" x="16" y="201" width="382" height="504"/>
+                                <color key="backgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tableViewCell" id="nNn-Dy-7qr">
+                                        <rect key="frame" x="0.0" y="28" width="382" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nNn-Dy-7qr" id="6C4-GR-i6o">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3Cp-jb-j52" id="Itf-4V-VZb"/>
+                                    <outlet property="delegate" destination="3Cp-jb-j52" id="Szk-UK-crl"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CYR-f8-gGW" firstAttribute="top" secondItem="kR9-Lz-PyO" secondAttribute="bottom" constant="19" id="6iX-AE-9EI"/>
+                            <constraint firstItem="bWW-z1-NmN" firstAttribute="top" secondItem="CYR-f8-gGW" secondAttribute="bottom" constant="44" id="9TZ-fh-B1m"/>
+                            <constraint firstItem="CYR-f8-gGW" firstAttribute="top" secondItem="FRq-eK-NcQ" secondAttribute="top" constant="101" id="OC0-Xq-Jba"/>
+                            <constraint firstItem="bWW-z1-NmN" firstAttribute="leading" secondItem="CYR-f8-gGW" secondAttribute="leading" id="Qvf-lu-Dcm"/>
+                            <constraint firstItem="kR9-Lz-PyO" firstAttribute="leading" secondItem="FRq-eK-NcQ" secondAttribute="leading" constant="16" id="TFp-Gh-tQq"/>
+                            <constraint firstItem="FRq-eK-NcQ" firstAttribute="trailing" secondItem="bWW-z1-NmN" secondAttribute="trailing" constant="16" id="The-Gf-EQl"/>
+                            <constraint firstItem="CYR-f8-gGW" firstAttribute="leading" secondItem="FRq-eK-NcQ" secondAttribute="leading" constant="16" id="WKO-cy-6qa"/>
+                            <constraint firstItem="bWW-z1-NmN" firstAttribute="centerX" secondItem="FRq-eK-NcQ" secondAttribute="centerX" id="fqS-4D-La5"/>
+                            <constraint firstItem="kR9-Lz-PyO" firstAttribute="top" secondItem="FRq-eK-NcQ" secondAttribute="top" constant="28" id="jBL-Fp-cx9"/>
+                            <constraint firstItem="bWW-z1-NmN" firstAttribute="trailing" secondItem="CYR-f8-gGW" secondAttribute="trailing" id="qdK-4E-r2J"/>
+                            <constraint firstItem="bWW-z1-NmN" firstAttribute="leading" secondItem="kR9-Lz-PyO" secondAttribute="leading" id="u2L-f8-NEi"/>
+                            <constraint firstItem="bWW-z1-NmN" firstAttribute="trailing" secondItem="kR9-Lz-PyO" secondAttribute="trailing" id="xqQ-Mb-fc7"/>
+                            <constraint firstItem="bWW-z1-NmN" firstAttribute="leading" secondItem="FRq-eK-NcQ" secondAttribute="leading" constant="16" id="xsq-Dd-A1W"/>
+                            <constraint firstItem="bWW-z1-NmN" firstAttribute="centerY" secondItem="FRq-eK-NcQ" secondAttribute="centerY" constant="75" id="zqM-tB-L9E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FRq-eK-NcQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="bm1" destination="kR9-Lz-PyO" id="Kj5-xK-ZhZ"/>
+                        <outlet property="bm2" destination="CYR-f8-gGW" id="zx1-sG-nc7"/>
+                        <outlet property="tableView" destination="bWW-z1-NmN" id="sHV-sr-n70"/>
+                        <segue destination="Ip5-Ki-MfC" kind="show" identifier="showDetail" id="dyX-bT-hXV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LMr-Sv-hGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42.399999999999999" y="332.38380809595208"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="JS3-9f-Xcg">
+            <objects>
+                <viewController id="Ip5-Ki-MfC" customClass="DetailsViewController" customModule="haklarimiogreniyorum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d4D-3S-bA9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kTW-hc-T85">
+                                <rect key="frame" x="16" y="108" width="382" height="564"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="tEJ-dd-XiY">
+                                        <rect key="frame" x="8" y="0.0" width="366" height="20.333333333333332"/>
+                                        <color key="backgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="tEJ-dd-XiY" firstAttribute="top" secondItem="kTW-hc-T85" secondAttribute="top" id="0Yd-WJ-fBx"/>
+                                    <constraint firstAttribute="bottom" secondItem="tEJ-dd-XiY" secondAttribute="bottom" constant="474" placeholder="YES" id="Abc-sw-DTs"/>
+                                    <constraint firstItem="tEJ-dd-XiY" firstAttribute="width" secondItem="kTW-hc-T85" secondAttribute="width" constant="-16" id="E6O-m8-j56"/>
+                                    <constraint firstItem="tEJ-dd-XiY" firstAttribute="leading" secondItem="kTW-hc-T85" secondAttribute="leading" constant="8" id="Gxx-hX-LhH"/>
+                                    <constraint firstAttribute="trailing" secondItem="tEJ-dd-XiY" secondAttribute="trailing" constant="8" id="aa0-vv-hP1"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FTG-Ki-94c">
+                                <rect key="frame" x="16" y="45" width="382" height="46"/>
+                                <color key="backgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Hl1-ar-HBM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kTW-hc-T85" firstAttribute="width" secondItem="d4D-3S-bA9" secondAttribute="width" constant="-32" id="Eba-xo-eVc"/>
+                            <constraint firstItem="kTW-hc-T85" firstAttribute="height" secondItem="d4D-3S-bA9" secondAttribute="height" constant="-172" id="Efo-x0-XbV"/>
+                            <constraint firstItem="kTW-hc-T85" firstAttribute="top" secondItem="Dtm-MS-h4C" secondAttribute="top" constant="88" id="HA3-a1-vBZ"/>
+                            <constraint firstItem="Dtm-MS-h4C" firstAttribute="trailing" secondItem="FTG-Ki-94c" secondAttribute="trailing" constant="16" id="V8F-H7-lHb"/>
+                            <constraint firstItem="kTW-hc-T85" firstAttribute="top" secondItem="FTG-Ki-94c" secondAttribute="bottom" constant="17" id="b2T-rD-iin"/>
+                            <constraint firstItem="FTG-Ki-94c" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Dtm-MS-h4C" secondAttribute="leading" id="bfg-Ua-HYK"/>
+                            <constraint firstItem="kTW-hc-T85" firstAttribute="leading" secondItem="Dtm-MS-h4C" secondAttribute="leading" constant="16" id="hhb-fw-iKQ"/>
+                            <constraint firstItem="FTG-Ki-94c" firstAttribute="centerX" secondItem="Dtm-MS-h4C" secondAttribute="centerX" id="nOW-vH-MRh"/>
+                            <constraint firstItem="FTG-Ki-94c" firstAttribute="top" secondItem="Dtm-MS-h4C" secondAttribute="top" constant="25" id="uy9-6Q-mc3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dtm-MS-h4C"/>
+                    </view>
+                    <connections>
+                        <outlet property="Label1" destination="FTG-Ki-94c" id="MXh-zz-SD4"/>
+                        <outlet property="Label2" destination="tEJ-dd-XiY" id="4vB-Zn-MEl"/>
+                        <outlet property="scrollView" destination="kTW-hc-T85" id="YFj-8F-BSm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ca7-LH-5jd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717.60000000000002" y="331.48425787106447"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="haklarimiogreniyorum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ss6" translatesAutoresizingMaskIntoConstraints="NO" id="jRw-LR-GdA">
+                                <rect key="frame" x="16" y="49" width="382" height="343"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSB-bx-fdb">
+                                <rect key="frame" x="16" y="443" width="382" height="65"/>
+                                <color key="backgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="gvQ-JK-uch"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="tintColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Haklarım Testini Çöz">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lpm-3T-U2p" kind="show" id="iAQ-ZH-FQ9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="HzN-gc-rC7">
+                                <rect key="frame" x="16" y="518" width="382" height="115"/>
+                                <color key="backgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Çocuk Hakları Bildirgesi">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3Cp-jb-j52" kind="show" id="Ag4-6c-hyS"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bo5-Xo-L1l">
+                                <rect key="frame" x="0.0" y="20" width="200" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="FfB-KN-4Jg">
+                                        <rect key="frame" x="8" y="491" width="184" height="120"/>
+                                        <color key="backgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="Sz7-Mi-qjB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                        <state key="normal" title="EĞİTİM VE TOPLUMSAL DESTEK HİZMETLERİ DAİRE BAŞKANLIĞI ">
+                                            <color key="titleColor" red="0.01133961453" green="0.047765392640000001" blue="0.069252825800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="f0p-aH-MFk" kind="show" id="Ezo-m1-Gg0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TUJ-OA-TAI">
+                                        <rect key="frame" x="8" y="86" width="184" height="120"/>
+                                        <color key="backgroundColor" red="0.72156862745098038" green="1" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="Bzh-l1-c47"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                        <state key="normal" title="AİLE VE SOSYAL POLİTİKALAR               BAKANLIĞI, ALO 183 SOSYAL DESTEK HATTI">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="jQz-gS-cd9" kind="show" id="2fb-Ar-aJZ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KURUMLAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfU-Mz-8AZ">
+                                        <rect key="frame" x="8" y="41.000000000000007" width="184" height="29.999999999999993"/>
+                                        <color key="backgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="zAy-EN-Q8B"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tNh-tf-gY3">
+                                        <rect key="frame" x="8" y="221" width="184" height="120"/>
+                                        <color key="backgroundColor" red="0.72156862749999995" green="1" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="Zat-zb-28R"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                        <state key="normal" title="KORUYUCU VE ÖNLEYİCİ HİZMETLER DAİRE             BAŞKANLIĞI">
+                                            <color key="titleColor" red="0.01133961453" green="0.047765392640000001" blue="0.069252825800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="cKf-bi-XuC" kind="show" id="GCE-uR-yJe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JV3-wD-OoI">
+                                        <rect key="frame" x="8" y="356" width="184" height="120"/>
+                                        <color key="backgroundColor" red="0.72156862749999995" green="1" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="2Jc-Be-Af3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                        <state key="normal" title="ÇOCUK HAKLARI DAİRE BAŞKANLIĞI">
+                                            <color key="titleColor" red="0.01133961453" green="0.047765392640000001" blue="0.069252825800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="d0e-cj-mIb" kind="show" id="c62-UB-9PL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FfB-KN-4Jg" firstAttribute="top" secondItem="JV3-wD-OoI" secondAttribute="bottom" constant="15" id="0BM-yz-sen"/>
+                                    <constraint firstItem="TUJ-OA-TAI" firstAttribute="centerX" secondItem="Bo5-Xo-L1l" secondAttribute="centerX" id="2m8-jJ-iMn"/>
+                                    <constraint firstItem="kfU-Mz-8AZ" firstAttribute="centerX" secondItem="Bo5-Xo-L1l" secondAttribute="centerX" id="4eT-Hq-Bdc"/>
+                                    <constraint firstItem="kfU-Mz-8AZ" firstAttribute="leading" secondItem="Bo5-Xo-L1l" secondAttribute="leading" constant="8" id="9hO-nv-kbz"/>
+                                    <constraint firstItem="JV3-wD-OoI" firstAttribute="leading" secondItem="Bo5-Xo-L1l" secondAttribute="leading" constant="8" id="Bhi-DZ-KRG"/>
+                                    <constraint firstItem="FfB-KN-4Jg" firstAttribute="leading" secondItem="Bo5-Xo-L1l" secondAttribute="leading" constant="8" id="Cem-ip-8za"/>
+                                    <constraint firstItem="tNh-tf-gY3" firstAttribute="centerX" secondItem="Bo5-Xo-L1l" secondAttribute="centerX" id="J9M-2i-rst"/>
+                                    <constraint firstItem="kfU-Mz-8AZ" firstAttribute="centerY" secondItem="Bo5-Xo-L1l" secondAttribute="centerY" constant="-267.5" id="Mhy-1D-yNw"/>
+                                    <constraint firstItem="FfB-KN-4Jg" firstAttribute="top" secondItem="JV3-wD-OoI" secondAttribute="bottom" constant="15" id="ObH-in-9BO"/>
+                                    <constraint firstItem="JV3-wD-OoI" firstAttribute="centerX" secondItem="Bo5-Xo-L1l" secondAttribute="centerX" id="ZM9-OI-0sj"/>
+                                    <constraint firstItem="tNh-tf-gY3" firstAttribute="leading" secondItem="Bo5-Xo-L1l" secondAttribute="leading" constant="8" id="cws-po-zhc"/>
+                                    <constraint firstItem="tNh-tf-gY3" firstAttribute="top" secondItem="TUJ-OA-TAI" secondAttribute="bottom" constant="15" id="egc-wu-eVm"/>
+                                    <constraint firstItem="TUJ-OA-TAI" firstAttribute="top" secondItem="kfU-Mz-8AZ" secondAttribute="bottom" constant="15" id="lP6-cR-nsC"/>
+                                    <constraint firstAttribute="width" constant="200" id="mdu-eQ-IBs"/>
+                                    <constraint firstItem="FfB-KN-4Jg" firstAttribute="centerX" secondItem="Bo5-Xo-L1l" secondAttribute="centerX" id="n6T-mZ-OxO"/>
+                                    <constraint firstItem="TUJ-OA-TAI" firstAttribute="leading" secondItem="Bo5-Xo-L1l" secondAttribute="leading" constant="8" id="nFr-r2-jAe"/>
+                                    <constraint firstItem="TUJ-OA-TAI" firstAttribute="centerY" secondItem="Bo5-Xo-L1l" secondAttribute="centerY" constant="-177.5" id="q3g-eR-nuO"/>
+                                    <constraint firstItem="JV3-wD-OoI" firstAttribute="top" secondItem="tNh-tf-gY3" secondAttribute="bottom" constant="15" id="tgl-Ub-2Sr"/>
+                                    <constraint firstAttribute="bottom" secondItem="FfB-KN-4Jg" secondAttribute="bottom" constant="36" id="yDO-8h-Tpz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HzN-gc-rC7" secondAttribute="bottom" constant="34" id="3a7-XH-CcI"/>
+                            <constraint firstItem="HzN-gc-rC7" firstAttribute="top" secondItem="QSB-bx-fdb" secondAttribute="bottom" constant="10" id="6HB-oM-Je6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HzN-gc-rC7" secondAttribute="trailing" constant="16" id="DC5-qY-ZiI"/>
+                            <constraint firstItem="HzN-gc-rC7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="FRp-qZ-IkI"/>
+                            <constraint firstItem="Bo5-Xo-L1l" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="I0c-XI-aJn"/>
+                            <constraint firstItem="QSB-bx-fdb" firstAttribute="top" secondItem="jRw-LR-GdA" secondAttribute="bottom" constant="51" id="JSH-9C-RKA"/>
+                            <constraint firstItem="Bo5-Xo-L1l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LZW-9M-ZVz"/>
+                            <constraint firstItem="Bo5-Xo-L1l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mbn-CT-8zm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jRw-LR-GdA" secondAttribute="trailing" constant="16" id="Plt-Tw-A0d"/>
+                            <constraint firstItem="jRw-LR-GdA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="WSf-bi-xHT"/>
+                            <constraint firstItem="jRw-LR-GdA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="alu-jz-36u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QSB-bx-fdb" secondAttribute="trailing" constant="16" id="cS0-Yw-a8m"/>
+                            <constraint firstItem="jRw-LR-GdA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" constant="-324" id="eb9-6G-cpk"/>
+                            <constraint firstItem="QSB-bx-fdb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xuP-Fj-y55"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lFb-W7-JNo">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="dOs-so-ffY">
+                            <color key="tintColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="menuPressButton:" destination="BYZ-38-t0r" id="eRN-Iq-Gyz"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="pause" id="tJh-Tg-KCc">
+                                <color key="tintColor" red="0.360784471" green="0.87001639600000003" blue="0.75996714830000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="Pause:" destination="BYZ-38-t0r" id="GWP-Rf-Aff"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="play" id="I8x-U6-yyI">
+                                <color key="tintColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="Play:" destination="BYZ-38-t0r" id="MP1-cj-9ve"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="agreementButton" destination="HzN-gc-rC7" id="pfm-HK-AG0"/>
+                        <outlet property="label" destination="kfU-Mz-8AZ" id="6lx-Vv-8r5"/>
+                        <outlet property="photo" destination="jRw-LR-GdA" id="6An-yY-kcA"/>
+                        <outlet property="sb1" destination="TUJ-OA-TAI" id="edm-9G-41C"/>
+                        <outlet property="sb2" destination="tNh-tf-gY3" id="pu1-oz-1ZF"/>
+                        <outlet property="sb3" destination="JV3-wD-OoI" id="6dT-WK-sx4"/>
+                        <outlet property="sb4" destination="FfB-KN-4Jg" id="Paw-GJ-0Eq"/>
+                        <outlet property="sideMenuConstraint" destination="Mbn-CT-8zm" id="OEt-Zr-0CT"/>
+                        <outlet property="testButton" destination="QSB-bx-fdb" id="1aW-Zo-xa8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-743.20000000000005" y="-146.17691154422789"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="bSi-Xk-vQq">
+            <objects>
+                <viewController id="cKf-bi-XuC" customClass="ViewController4" customModule="haklarimiogreniyorum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vJD-Yt-bJ6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJb-xm-J2e">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ive-CD-05s">
+                                        <rect key="frame" x="8" y="8" width="398" height="3396"/>
+                                        <color key="backgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <string key="text">KORUYUCU VE ÖNLEYİCİ HİZMETLER DAİRE BAŞKANLIĞI
+
+İletişim Bilgileri:
+Telefon: 0312-705 50 64
+Fax: 0312-705 50 22
+e-posta: koruveonle@aile.gov.tr
+
+Koruyucu ve Önleyici Hizmetler Daire Başkanlığı şu birimlerden oluşmaktadır;
+1-Koruyucu Hizmetler Birimi;
+2-Önleyici Hizmetler Birimi;
+3-Risk Alanları Belirleme ve Önleme Birimi;
+4-Özel Kuruluşlar Birimi;
+ 
+Başkanlığımız görev alanına giren konularda yapmış olduğu çalışmalar şunlardır:
+ 
+•	Aile ve çocuk arasındaki ilişkiyi güçlendirmek amacıyla gerekli müdahale yöntemlerini geliştirmek,
+•	Çocuklara ve ailelerine yönelik danışmanlık hizmetinin esas ve standartlarını belirlemek, bu hizmetin verileceği sistemi oluşturmak ve geliştirmek.
+•	 Çocuk alanında bireylere, ailelere ve topluma yönelik olarak yapılacak danışmanlık ve rehberlik hizmetleri ile anne ve babaların çocuk bakımı ve eğitimi konusunda eğitilmesi ve desteklemesine yönelik hizmetleri düzenlemek,
+•	Çocuklara yönelik koruyucu,  önleyici planların hazırlanmasına yönelik çalışmaları yürütmek ve koordine etmek.
+•	Risk altındaki ailelerin ve çocukların genel özelliklerinin belirlenmesi ve risk oluşmadan çocukların aile ortamında desteklenmesine yönelik erken tanı ve uyarı sistemini kurmak, geliştirmek ve uygulamak,  acil müdahale ekiplerinin oluşturulması ve hizmetlerinin yürütülmesine ilişkin esas ve usulleri belirlemek,
+•	 Risk altındaki aile ve çocukların erken dönemde tespit edilebileceği ve önlemlerin alınmasına yönelik mekanizmaları ilgili kamu kurum kuruluşları ile işbirliği içersinde oluşturmak,
+•	 Kısa süreli aile yanından uzaklaşması gereken çocuklar ile bu çocukların ailelerine yönelik çalışmaları düzenlemek,
+•	Çocukları her türlü zararlı alışkanlıkların tehlikeleri hakkında bilinçlendirici çalışmaları planlamak ve uygulanmasını sağlamak,
+•	Çocukların duygusal, cinsel ve ekonomik istismarını önlemek, şiddete karşı korunmasını sağlamak amacıyla yapılacak hizmetlerin düzenlenmesi, geliştirilmesi, etkinliğinin ve verimliliğinin artırılması ile ilgili planlamaları yapmak, çalışmaları yürütmek,
+•	Özel hukuk gerçek veya tüzel kişiler ile diğer kamu kurumlarınca çocuklara yönelik olarak açılacak sosyal hizmet kuruluşlarının açılması, kapatılması, kapasitelerinin, hizmet standardının belirlenmesi, ücret ve denetimleri ile ilgili işlemleri yürütmek,
+•	Yerel yönetimler, sivil toplum kuruluşları ve gerçek kişiler tarafından çocuklara sunulan çocuk kulüpleri, çocuk ve gençlik merkezleri ve benzeri hizmet birimlerine yönelik işbirliği ve rehberlik yapmak,
+•	özel sosyal hizmet kuruluşlarının mevzuatının geliştirilmesi, uygulanması, kuruluşlardan gelen görüş taleplerinin değerlendirilerek çözümlenmesini sağlamak,
+•	 Çocuklara yönelik özel sosyal hizmet kuruluşlarında verilen hizmetlerin kalitesinin yükseltilmesi, etkinlik ve verimlilik derecesinin arttırılması amacıyla mevzuat, plan ve programlar hazırlamak,
+•	Çocuklara yönelik özel sosyal hizmet kuruluşlarına ihtiyaç duyulan konularda,  rehberlik etmek, ihtiyaçlarının giderilmesine yönelik çalışmaları yürütmek, denetimlerde bulunulmasını sağlamak,
+•	Kamu kurum ve kuruluşlarınca açılacak çocuklara yönelik sosyal hizmet kuruluşlarının
+•	Özel ve diğer kamu kuruluşları, paydaş kurum ve kuruluş temsilcilerine verilecek dış eğitimleri belirlemek, eğitim içeriklerini oluşturmak.
+•	5395 Sayılı Çocuk Koruma Kanununda belirlenen tedbirlerin yürütülmesine ilişkin sekretarya işlemlerini yapmak ve hizmetlerin koordinasyonunu sağlamak.
+</string>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Ive-CD-05s" secondAttribute="bottom" constant="51" id="3jc-Vx-cn7"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ive-CD-05s" secondAttribute="trailing" constant="8" id="95G-2C-aqo"/>
+                                    <constraint firstItem="Ive-CD-05s" firstAttribute="leading" secondItem="BJb-xm-J2e" secondAttribute="leading" constant="8" id="Yut-j1-XCr"/>
+                                    <constraint firstItem="Ive-CD-05s" firstAttribute="width" secondItem="BJb-xm-J2e" secondAttribute="width" constant="-16" id="cOx-wT-Qck"/>
+                                    <constraint firstItem="Ive-CD-05s" firstAttribute="top" secondItem="BJb-xm-J2e" secondAttribute="top" constant="8" id="hKk-KJ-Y1I"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BJb-xm-J2e" firstAttribute="leading" secondItem="zBg-NW-YKO" secondAttribute="leading" id="1R5-hZ-PSh"/>
+                            <constraint firstItem="BJb-xm-J2e" firstAttribute="top" secondItem="zBg-NW-YKO" secondAttribute="top" id="Poq-rj-hb9"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="BJb-xm-J2e" secondAttribute="bottom" id="hhs-z2-UZR"/>
+                            <constraint firstItem="BJb-xm-J2e" firstAttribute="width" secondItem="vJD-Yt-bJ6" secondAttribute="width" id="kFB-cl-Odb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zBg-NW-YKO"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="Ive-CD-05s" id="WfR-07-lf9"/>
+                        <outlet property="scrollView" destination="BJb-xm-J2e" id="Ctm-Lg-JNm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tDC-d0-nhM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="716" y="-1114.992503748126"/>
+        </scene>
+        <!--View Controller5-->
+        <scene sceneID="e5y-7k-PlM">
+            <objects>
+                <viewController id="f0p-aH-MFk" customClass="ViewController5" customModule="haklarimiogreniyorum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v2d-fe-sX4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qoz-iu-5Uq">
+                                <rect key="frame" x="0.0" y="20" width="414" height="736"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cSl-zY-PmD">
+                                        <rect key="frame" x="8" y="8" width="430" height="1052"/>
+                                        <color key="backgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <string key="text">Eğitim ve Toplumsal Destek Hizmetleri Daire Başkanlığı
+
+İletişim Bilgileri
+Telefon: 0312-705 50 44
+Fax: 0312-705 50 21
+e-posta: egitimtdh@aile.gov.tr
+ 
+Başkanlığımız görev alanına giren konularda yapmış olduğu çalışmalar şunlardır:
+ 
+Çocukların Hayata Hazırlanması ve Eğitimine İlişkin Yürütülen İşlemler:
+ 
+Sosyal Hizmet kuruluşlarında bakım ve korunma altında bulunan çocukların eğitim başta olmak üzere sportif, sanatsal ve kültürel başarılarının artırılmasına yönelik tedbirlerin alınması ve gerekli programların hazırlanması.
+Ortaöğretim ve üniversite giriş sınavlarına hazırlanacak çocukların başarı durumlarını artırmak amacıyla özel kurs hizmetlerinden yararlandırmak için ilgili kurum ve kuruluşlarla iş birliğine ilişkin tedbirler almak.
+Çocukların psiko-sosyal açından desteklenmesi konusunda gerek kurum içi gerekse ilgili kurum ve kuruluşlarla işbirliğine ilişkin tedbirler almak.
+Eğitim etkinliklere ilgili programlara ilişkin iş ve işlemleri koordine etmek ve uygulanmasını sağlamak.
+</string>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="cSl-zY-PmD" secondAttribute="bottom" constant="49" id="26P-af-0z4"/>
+                                    <constraint firstItem="cSl-zY-PmD" firstAttribute="leading" secondItem="Qoz-iu-5Uq" secondAttribute="leading" constant="8" id="Tue-MN-kn3"/>
+                                    <constraint firstAttribute="trailing" secondItem="cSl-zY-PmD" secondAttribute="trailing" constant="-24" id="VYe-j4-tr0"/>
+                                    <constraint firstItem="cSl-zY-PmD" firstAttribute="top" secondItem="Qoz-iu-5Uq" secondAttribute="top" constant="8" id="VbE-L3-eiZ"/>
+                                    <constraint firstItem="cSl-zY-PmD" firstAttribute="width" secondItem="Qoz-iu-5Uq" secondAttribute="width" constant="16" id="jex-GP-xAz"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qoz-iu-5Uq" firstAttribute="leading" secondItem="xN1-Wc-MyH" secondAttribute="leading" id="B8g-L0-E7K"/>
+                            <constraint firstItem="Qoz-iu-5Uq" firstAttribute="height" secondItem="v2d-fe-sX4" secondAttribute="height" id="Ec6-3Q-ZHc"/>
+                            <constraint firstItem="Qoz-iu-5Uq" firstAttribute="top" secondItem="xN1-Wc-MyH" secondAttribute="top" id="QPL-oG-hVz"/>
+                            <constraint firstItem="Qoz-iu-5Uq" firstAttribute="width" secondItem="v2d-fe-sX4" secondAttribute="width" id="cjO-Dh-hFF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xN1-Wc-MyH"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="cSl-zY-PmD" id="FTe-MI-xT2"/>
+                        <outlet property="scrollView" destination="Qoz-iu-5Uq" id="oFF-Ht-hYl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BJM-32-qay" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="716" y="-398.05097451274366"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="u11-yG-ZWI">
+            <objects>
+                <viewController id="d0e-cj-mIb" customClass="ViewController3" customModule="haklarimiogreniyorum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PYt-xv-75Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B0R-dj-vpk">
+                                <rect key="frame" x="0.0" y="20" width="414" height="736"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IZO-1D-WO6">
+                                        <rect key="frame" x="8" y="8" width="398" height="1893.3333333333333"/>
+                                        <color key="backgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <string key="text">ÇOCUK HAKLARI DAİRE BAŞKANLIĞI
+İletişim Bilgileri:
+Tel: 705 51 02
+Fax: 705 50 75
+e-posta: chdb@aile.gov.tr
+Çocuk Hakları Daire Başkanlığı şu birimlerden oluşmaktadır:
+ 
+•	Çocuk Haklarının İzlenmesi ve           Koordinasyonu Birimi
+•	Çocuk Hakları Raporlama Birimi
+•	Çocuk Hakları Tanıtım ve Bilinçlendirme Birimi
+
+ Çocuk Hakları Daire Başkanlığının görevleri şunlardır:
+•	Çocuk Hakları İzleme ve Değerlendirme Kurulunun sekreterya işlemlerini yürütmek.
+•	Türkiye’de Çocuk Hakları Sözleşmesinin uygulanması ve izlenmesinin koordinasyonunu sağlamak.
+•	 Çocuk Hakları Sözleşmesinin hükümlerinin, çocuklukla ilgili tüm alanlarındaki mevcut yasal, idari ve yapısal durumunun belirlenmesine yönelik takip çalışmaları yapmak, raporlamak ve ilgili makama sunmak.
+•	Türkiye’de çocukla ilgili yasaların Çocuk Hakları Sözleşmesine uyumluluğunun sağlanmasına yönelik çalışmalar yapmak.
+•	 Çocuk Hakları Sözleşmesi uyarınca ulusal raporların hazırlanmasına yönelik resmi ve gönüllü kuruluşlarla işbirliği yapmak, raporların hazırlanmasını ve uluslar arası platformda sunulması çalışmalarına katılmak.
+•	Çocuk Hakları Sözleşmesi’nin ihlal edildiği(aile içi, kurumsal, basılı ve görsel medya vb.) durumlara ve koşullara ilişkin müdahale süreçlerini geliştirmek ve takip etmek.
+•	Çocuk Hakları Sözleşmesi’nin ilke ve hükümlerinin yetişkinler ve çocuklar tarafından öğrenilerek hayata geçirilmesine yönelik, tanıtım kampanyası, forum, konferans, kongreler, seminer, sempozyum vb. etkinlikler düzenlemek ve sonuçlarının ulusal düzeyde izlenmesi ve değerlendirilmesine ilişkin iş ve işlemleri yürütmek.
+•	İnternet ortamı vb. materyal hazırlamak/ hazırlatmak ve ilgili kişi ve kuruluşlara ulaştırmak
+•	 Her ilde oluşturulan Çocuk Hakları İl Çocuk Komiteleri ve İl Yetişkin Komitelerinin çalışmalarına rehberlik etmek, düzenli toplantılar yapmak ve koordine etmek.
+</string>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="IZO-1D-WO6" firstAttribute="leading" secondItem="B0R-dj-vpk" secondAttribute="leading" constant="8" id="C3E-Hw-gNd"/>
+                                    <constraint firstItem="IZO-1D-WO6" firstAttribute="width" secondItem="B0R-dj-vpk" secondAttribute="width" constant="-16" id="CqR-D0-2sr"/>
+                                    <constraint firstAttribute="bottom" secondItem="IZO-1D-WO6" secondAttribute="bottom" constant="54" id="Hdg-oJ-VnS"/>
+                                    <constraint firstItem="IZO-1D-WO6" firstAttribute="top" secondItem="B0R-dj-vpk" secondAttribute="top" constant="8" id="OnK-A9-qkw"/>
+                                    <constraint firstAttribute="trailing" secondItem="IZO-1D-WO6" secondAttribute="trailing" constant="8" id="heD-aG-pdd"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B0R-dj-vpk" firstAttribute="height" secondItem="PYt-xv-75Y" secondAttribute="height" id="VmC-dj-YKI"/>
+                            <constraint firstItem="B0R-dj-vpk" firstAttribute="leading" secondItem="0od-yy-oRn" secondAttribute="leading" id="bDP-Qx-jwK"/>
+                            <constraint firstItem="B0R-dj-vpk" firstAttribute="width" secondItem="PYt-xv-75Y" secondAttribute="width" id="jDT-JB-MoI"/>
+                            <constraint firstItem="B0R-dj-vpk" firstAttribute="top" secondItem="0od-yy-oRn" secondAttribute="top" id="tou-LR-yxj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0od-yy-oRn"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="IZO-1D-WO6" id="kYN-wE-nZh"/>
+                        <outlet property="scrollView" destination="B0R-dj-vpk" id="KIo-cd-B6G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="whC-jW-LrM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42.399999999999999" y="-398.05097451274366"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="G5A-ZZ-chm">
+            <objects>
+                <viewController id="jQz-gS-cd9" customClass="ViewController2" customModule="haklarimiogreniyorum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qR6-Kg-AR2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k1o-L7-qSg">
+                                <rect key="frame" x="0.0" y="20" width="414" height="736"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="E3J-dG-zSG">
+                                        <rect key="frame" x="8" y="8" width="398" height="721.33333333333337"/>
+                                        <color key="backgroundColor" red="0.72323720319999996" green="1" blue="0.98041685180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <string key="text">AİLE VE SOSYAL POLİTİKALAR BAKANLIĞI, ALO 183 SOSYAL DESTEK HATTI                                                 
+Evlât edinme, koruyucu âile, çocuk hakları, çocukların âile yanında desteklenmesi, suça yönelen veya suçun mağduru olan çocukların rehabilitasyonu, sokakta yaşayan/çalıştırılan çocuklara yönelik hizmetler, çocukların korunma altına alınması, çocuk yuvâsına, yetiştirme yurduna, sevgi evlerine, çocuk evlerine yerleştirilmesi, kuruluşlardan ayrılan çocukların işe yerleştirilmesi ve toplum içinde izlenmesi, çocuklara yönelik gönüllü hizmetlerine ilişkin gelen talep, tâvsiye ve şikâyetler değerlendirilerek rehberlik yapılmakta, gerek görülmesi halinde Çocuk Hizmetleri Genel Müdürlüğü veya ilgili ilin Aile ve Sosyal Politikalar İl Müdürlüğünde görevli Acil Müdahale Ekip Sorumlusuna aktarılarak müdâhale edilmesi sağlanmaktadır.
+</string>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="E3J-dG-zSG" secondAttribute="bottom" constant="66" id="6v3-VY-aES"/>
+                                    <constraint firstItem="E3J-dG-zSG" firstAttribute="leading" secondItem="k1o-L7-qSg" secondAttribute="leading" constant="8" id="J4v-Tz-CTn"/>
+                                    <constraint firstAttribute="trailing" secondItem="E3J-dG-zSG" secondAttribute="trailing" constant="8" id="LG0-Aw-rOc"/>
+                                    <constraint firstItem="E3J-dG-zSG" firstAttribute="width" secondItem="k1o-L7-qSg" secondAttribute="width" constant="-16" id="MlV-BV-Fjk"/>
+                                    <constraint firstItem="E3J-dG-zSG" firstAttribute="top" secondItem="k1o-L7-qSg" secondAttribute="top" constant="8" id="raG-EC-UZt"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="k1o-L7-qSg" firstAttribute="leading" secondItem="fYn-NQ-7GR" secondAttribute="leading" id="TTk-Qd-M7D"/>
+                            <constraint firstItem="k1o-L7-qSg" firstAttribute="top" secondItem="fYn-NQ-7GR" secondAttribute="top" id="ZHK-wr-E1R"/>
+                            <constraint firstItem="k1o-L7-qSg" firstAttribute="height" secondItem="qR6-Kg-AR2" secondAttribute="height" id="jaD-c6-pWb"/>
+                            <constraint firstItem="k1o-L7-qSg" firstAttribute="width" secondItem="qR6-Kg-AR2" secondAttribute="width" id="jyT-no-83W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fYn-NQ-7GR"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="label" destination="E3J-dG-zSG" id="pAF-oO-h9y"/>
+                        <outlet property="scrollView" destination="k1o-L7-qSg" id="IHL-PQ-nEp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="56a-75-xs0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42.399999999999999" y="-1114.992503748126"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="smile" width="400" height="400"/>
+        <image name="ss6" width="400" height="388"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="shf-4Z-VbX"/>
+        <segue reference="Fw6-vv-lZ3"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "haklarimio&#x308;greniyorum/ViewController.swift"
+            timestampString = "545404815.783201"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "haklarimio_greniyorum.ViewController.sideMenuConstraint.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.NSLayoutConstraint&gt;"
+                  moduleName = "haklarimio&#x308;greniyorum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eliftultay/Documents/IOS/haklarimio%CC%88greniyorum/haklarimio%CC%88greniyorum/ViewController.swift"
+                  timestampString = "544049811.374784"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "haklarimio_greniyorum.ViewController.sideMenuConstraint.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.NSLayoutConstraint&gt;"
+                  moduleName = "haklarimio&#x308;greniyorum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eliftultay/Documents/IOS/haklarimio%CC%88greniyorum/haklarimio%CC%88greniyorum/ViewController.swift"
+                  timestampString = "544049811.386211"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "90">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "haklarimio_greniyorum.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; haklarimio_greniyorum.ViewController"
+                  moduleName = "haklarimio&#x308;greniyorum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eliftultay/Documents/IOS/haklarimio%CC%88greniyorum/haklarimio%CC%88greniyorum/ViewController.swift"
+                  timestampString = "544049811.393586"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "haklarimio_greniyorum.ViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;haklarimio_greniyorum.ViewController&gt;"
+                  moduleName = "haklarimio&#x308;greniyorum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eliftultay/Documents/IOS/haklarimio%CC%88greniyorum/haklarimio%CC%88greniyorum/ViewController.swift"
+                  timestampString = "544049811.401444"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "55">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "haklarimio&#x308;greniyorum/DetailsViewController.swift"
+            timestampString = "545091552.538496"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "haklarimio&#x308;greniyorum/AgreementViewController.swift"
+            timestampString = "545091552.54995"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "haklarimio&#x308;greniyorum/AgreementViewController.swift"
+            timestampString = "545091552.551231"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "globalinit_33_0F91CB4DF5A3CE20156D41F27D65075F_func0"
+                  moduleName = "haklarimio&#x308;greniyorum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eliftultay/Documents/IOS/haklarimio%CC%88greniyorum/haklarimio%CC%88greniyorum/AgreementViewController.swift"
+                  timestampString = "544920913.673507"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "haklarimio_greniyorum.rowNumber.unsafeMutableAddressor : Swift.Int"
+                  moduleName = "haklarimio&#x308;greniyorum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eliftultay/Documents/IOS/haklarimio%CC%88greniyorum/haklarimio%CC%88greniyorum/AgreementViewController.swift"
+                  timestampString = "544920913.6777641"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "haklarimio&#x308;greniyorum/AgreementViewController.swift"
+            timestampString = "545091552.554464"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "AgreementViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "variable initialization expression of haklarimio_greniyorum.AgreementViewController.list : Swift.Array&lt;Swift.Int&gt;"
+                  moduleName = "haklarimio&#x308;greniyorum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eliftultay/Documents/IOS/haklarimio%CC%88greniyorum/haklarimio%CC%88greniyorum/AgreementViewController.swift"
+                  timestampString = "544920913.6881469"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "haklarimio_greniyorum.AgreementViewController.list.getter : Swift.Array&lt;Swift.Int&gt;"
+                  moduleName = "haklarimio&#x308;greniyorum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eliftultay/Documents/IOS/haklarimio%CC%88greniyorum/haklarimio%CC%88greniyorum/AgreementViewController.swift"
+                  timestampString = "544920913.691913"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "109">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "haklarimio_greniyorum.AgreementViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; haklarimio_greniyorum.AgreementViewController"
+                  moduleName = "haklarimio&#x308;greniyorum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eliftultay/Documents/IOS/haklarimio%CC%88greniyorum/haklarimio%CC%88greniyorum/AgreementViewController.swift"
+                  timestampString = "544920913.6994801"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "233">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "haklarimio_greniyorum.AgreementViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;haklarimio_greniyorum.AgreementViewController&gt;"
+                  moduleName = "haklarimio&#x308;greniyorum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eliftultay/Documents/IOS/haklarimio%CC%88greniyorum/haklarimio%CC%88greniyorum/AgreementViewController.swift"
+                  timestampString = "544920913.7028871"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "149">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "haklarimio&#x308;greniyorum/DetailsViewController.swift"
+            timestampString = "545091552.5551"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "showDetails()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "haklarimio&#x308;greniyorum/DetailsViewController.swift"
+            timestampString = "545091552.557"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "showDetails()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "haklarimio&#x308;greniyorum/ViewController.swift"
+            timestampString = "545404815.79803"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "haklarimio&#x308;greniyorum/ViewController.swift"
+            timestampString = "545404815.798564"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
